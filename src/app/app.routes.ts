@@ -1,7 +1,9 @@
 import { Routes } from '@angular/router';
-import { HeaderComponent } from '../app/header/header.component';
+import { HomeComponent } from './home/home.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 export const routes: Routes = [
-    {path: '', redirectTo: '/header', pathMatch: 'full'},
-    { path: 'header', component: HeaderComponent}
+    {path: '', component: SidenavComponent, children: [
+        { path: '', component: HomeComponent}
+    ]}
 ];

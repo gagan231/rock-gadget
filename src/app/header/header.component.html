@@ -1,28 +1,12 @@
 <mat-toolbar>
-    <button mat-icon-button class="menu-icon" aria-label="menu-icon" (click)="drawer.toggle()">
+    <button mat-icon-button class="menu-icon" aria-label="menu-icon" (click)="toggleSidebar.emit()">
+        <!-- <button mat-icon-button class="menu-icon" aria-label="menu-icon"> -->
         <mat-icon>menu</mat-icon>
     </button>
     <span>Rock Gadgets</span>
     <span class="example-spacer"></span>
     <span>About Us</span>
-    <button mat-icon-button class="search-icon" aria-label="Example icon-button with share icon">
+    <button mat-icon-button class="search-icon" aria-label="search icon">
         <mat-icon>search</mat-icon>
     </button>
 </mat-toolbar>
-<mat-drawer-container autosize class="background">
-    <mat-drawer #drawer class="no-border">
-        <mat-nav-list>
-            <a class="no-border" mat-list-item routerLink="">Home</a>
-            <a class="no-border" mat-list-item routerLink="">About Us</a>
-        </mat-nav-list>
-    </mat-drawer>
-</mat-drawer-container>
-<!-- <mat-sidenav-container class="example-container" autosize [hasBackdrop]="true">
-    <mat-sidenav #drawer class="example-sidenav" mode="side" [(opened)]="opened">
-        <mat-nav-list>
-            <a mat-list-item routerLink="">Home</a>
-            <a mat-list-item routerLink="">About Us</a>
-        </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>Main content</mat-sidenav-content> 
-</mat-sidenav-container> -->

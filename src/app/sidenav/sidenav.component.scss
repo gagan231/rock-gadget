@@ -1,0 +1,15 @@
+mat-sidenav-container, mat-drawer-container{
+    display: flex;
+    height: calc(100vh - 65px);
+}
+
+.drawer {
+    width: 240px; /* Width of the drawer */
+    background: #f4f4f4; /* Background color of the drawer */
+  }
+  
+  .content {
+    flex: 1; /* Takes up remaining space */
+    padding: 16px;
+    overflow-y: auto; /* Allows scrolling if content is too long */
+  }
