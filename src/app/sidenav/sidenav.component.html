@@ -6,9 +6,11 @@
             <a class="no-border" mat-list-item routerLink="">About Us</a>
         </mat-nav-list>
     </mat-drawer>
-    <div class="content">
-        <router-outlet></router-outlet>
-    </div>
+    <mat-drawer-content class="w-100">
+        <div class="content p-0">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-drawer-content>
 </mat-drawer-container>
 <!-- <mat-sidenav-container class="example-container" autosize [hasBackdrop]="true">
     <mat-sidenav #drawer class="example-sidenav" mode="side" [(opened)]="opened">
